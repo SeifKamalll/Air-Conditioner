@@ -37,3 +37,4 @@ function down() {
   }
   console.log("Temperature is : " + temp);
 }
+
