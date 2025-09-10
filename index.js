@@ -6,10 +6,11 @@ let temp = 16;
 function status() {
   if (acstatus == false) {
     acstatus = true;
+    console.log("Status : On");
   } else {
     acstatus = false;
+    console.log("Status : Off");
   }
-  console.log("Status is : " + acstatus);
 }
 
 
@@ -19,7 +20,7 @@ function speed() {
   } else if (fanspeed == 3 && acstatus == true) {
     fanspeed = 1;
   }
-  console.log("Fan Speed is : " + fanspeed);
+  console.log("Fan Speed : " + fanspeed);
 }
 
 
@@ -27,7 +28,7 @@ function up() {
   if (temp < 29 && acstatus == true) {
     temp++;
   }
-  console.log("Temperature is : " + temp);
+  console.log("Temperature : " + temp);
 }
 
 
@@ -35,6 +36,6 @@ function down() {
   if (temp > 16 && acstatus == true) {
     temp--;
   }
-  console.log("Temperature is : " + temp);
+  console.log("Temperature : " + temp);
 }
 
